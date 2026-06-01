@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jesús Carmona | Ilustración, cómic y 3D</title>
+    <meta
+      name="description"
+      content="Portfolio de Jesús Carmona: ilustración, cómic, concept art y diseño 2D/3D."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Cabecera principal">
+      <a class="brand" href="#inicio" aria-label="Inicio">
+        <span class="brand-mark">JC</span>
+        <span>Jesús Carmona</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#bio">Info</a>
+        <a href="#comic">Cómic</a>
+        <a href="#dibujos">Dibujos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio" aria-label="Presentación">
+        <img
+          class="hero-image"
+          src="assets/hero-carmona.png"
+          alt="Mesa de estudio con páginas de cómic, tableta digital y personajes ilustrados emergiendo de los bocetos"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Ilustración · Cómic · 2D/3D</p>
+          <h1>Jesús Carmona</h1>
+          <p class="hero-copy">
+            Portfolio visual para obra narrativa, personajes, concept art y proyectos
+            de cómic con una mirada gráfica potente y contemporánea.
+          </p>
+          <div class="hero-actions" aria-label="Acciones destacadas">
+            <a class="button primary" href="#comic">Ver cómic</a>
+            <a class="button secondary" href="#dibujos">Ver dibujos</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-band" id="bio">
+        <div class="section-heading">
+          <p class="eyebrow">Sobre el artista</p>
+          <h2>Ilustrador, dibujante de cómic y diseñador visual</h2>
+        </div>
+        <div class="bio-grid">
+          <div class="bio-copy">
+            <p>
+              Jesús Carmona desarrolla imágenes con vocación narrativa: personajes,
+              mundos visuales, escenas secuenciales y piezas que combinan dibujo,
+              color, composición y sensibilidad de diseño.
+            </p>
+            <p>
+              Su perfil encaja en proyectos editoriales, cómic, concept art,
+              ilustración promocional y desarrollo visual en 2D y 3D. Esta web
+              está preparada para sustituir las imágenes de ejemplo por obra real,
+              páginas completas, bocetos y encargos publicados.
+            </p>
+          </div>
+          <dl class="skill-list" aria-label="Especialidades">
+            <div>
+              <dt>Cómic</dt>
+              <dd>Narrativa secuencial, página, ritmo y acción.</dd>
+            </div>
+            <div>
+              <dt>Ilustración</dt>
+              <dd>Personajes, portadas, escenas y acabado editorial.</dd>
+            </div>
+            <div>
+              <dt>2D / 3D</dt>
+              <dd>Diseño de formas, volumen, materiales y concept visual.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section comic-section" id="comic">
+        <div class="section-heading">
+          <p class="eyebrow">Cómic destacado</p>
+          <h2>Zona para publicar páginas, capítulos o avances</h2>
+        </div>
+        <div class="comic-layout">
+          <article class="comic-reader">
+            <img
+              id="comicPage"
+              src="assets/comic-page-sample.png"
+              alt="Página de cómic de ejemplo con persecución bajo la lluvia"
+            />
+          </article>
+          <aside class="comic-panel" aria-label="Información del cómic">
+            <p class="comic-kicker">Proyecto en curso</p>
+            <h3>Capítulo piloto</h3>
+            <p>
+              Espacio pensado para colgar páginas reales del cómic, ordenar
+              capítulos y destacar avances de lectura. Las páginas de ejemplo se
+              pueden reemplazar por archivos propios dentro de la carpeta
+              <strong>assets</strong>.
+            </p>
+            <div class="chapter-controls" role="group" aria-label="Selector de página">
+              <button class="page-button active" type="button" data-page="assets/comic-page-sample.png">
+                01
+              </button>
+              <button class="page-button" type="button" data-page="assets/gallery-character.png">
+                02
+              </button>
+              <button class="page-button" type="button" data-page="assets/gallery-guardian.png">
+                03
+              </button>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section drawings-section" id="dibujos">
+        <div class="section-heading">
+          <p class="eyebrow">Galería</p>
+          <h2>Dibujos, personajes y arte conceptual</h2>
+        </div>
+        <div class="filter-bar" role="group" aria-label="Filtros de galería">
+          <button class="filter-button active" type="button" data-filter="all">Todo</button>
+          <button class="filter-button" type="button" data-filter="personaje">Personaje</button>
+          <button class="filter-button" type="button" data-filter="escena">Escena</button>
+          <button class="filter-button" type="button" data-filter="comic">Cómic</button>
+        </div>
+        <div class="gallery-grid">
+          <article class="work-card" data-category="personaje">
+            <img
+              src="assets/gallery-character.png"
+              alt="Diseño de personaje futurista con influencia flamenca y guante mecánico"
+            />
+            <div class="work-copy">
+              <p>Personaje</p>
+              <h3>Cazarrecompensas escarlata</h3>
+            </div>
+          </article>
+          <article class="work-card" data-category="escena">
+            <img
+              src="assets/gallery-guardian.png"
+              alt="Guardián de piedra despertando en un invernadero abandonado"
+            />
+            <div class="work-copy">
+              <p>Escena</p>
+              <h3>Guardián del invernadero</h3>
+            </div>
+          </article>
+          <article class="work-card" data-category="comic">
+            <img
+              src="assets/comic-page-sample.png"
+              alt="Página de cómic de ejemplo con persecución cinematográfica"
+            />
+            <div class="work-copy">
+              <p>Cómic</p>
+              <h3>Secuencia bajo la lluvia</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-band" id="contacto">
+        <div>
+          <p class="eyebrow">Contacto</p>
+          <h2>Disponible para encargos, publicaciones y proyectos visuales</h2>
+        </div>
+        <a class="button primary" href="mailto:hola@jesuscarmona.art">hola@jesuscarmona.art</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Jesús Carmona. Portfolio de ilustración, cómic y diseño visual.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
